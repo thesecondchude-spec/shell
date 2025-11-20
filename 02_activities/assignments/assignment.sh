@@ -64,4 +64,4 @@ find data/processed -type f > data/inventory.txt
 
 ###########################################
 
-echo "Project setup is complete done by Anthony Chude!"
+echo "Project setup is complete done by Anthony Chudee!"
