@@ -44,9 +44,11 @@ cp raw/*event*.log processed/event_logs/
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm -f raw/*ipaddr*
 rm -f processed/user_logs/*ipaddr*
-# 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 
+# 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
+find processed -type f > inventory.txt
+cd ..
 
 ###########################################
-
+# to run this script: cd to the directory containing assignment.sh and run: bash assignment.sh
 echo "Project setup is complete!"
